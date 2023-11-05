@@ -1,0 +1,417 @@
+@font-face {
+    font-family:"poppins400";
+    src: url(font/Poppins-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: "poppins500";
+    src: url(font/Poppins-Medium.ttf);
+  }
+  
+  @font-face {
+    font-family: "poppins600";
+    src: url(font/Poppins-SemiBold.ttf);
+  }
+ 
+ *{
+    margin:0;
+    padding:0; 
+    box-sizing:border-box
+} 
+      
+body{
+    background-color: #F2F2F2;
+}
+ 
+a{
+    text-decoration: none;
+}
+ 
+.header_container{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+h4{
+    font-family: poppins600;
+}
+.photo_text,
+label{
+    font-family:'poppins400';
+}
+.nav_bar{
+    display: flex;
+}
+
+.nav_bar_a{
+    position: relative;
+    font-family:'poppins500';
+    color: black;
+}
+.nav_bar_a:after{
+    content: "";
+    position: absolute;
+    background-color: #29B24E;
+    height: 2px;
+    width: 0%;
+    left: -0%;
+    top: 30px;
+    bottom: 0;
+}
+.nav_bar_a:hover::after{
+    width: 100%;
+}
+ 
+li{
+    padding: 21px;
+    list-style-type: none;
+}
+.main_container{
+    display: grid;
+    justify-content: center;
+}
+.header-button{
+    max-width: 156px;
+    width: 100%;
+    height: 47px;
+    border-radius: 12px;
+    background-color: #29b24e;
+    border: none;
+    color: white;
+    font-family: poppins400;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+.header-button:hover{
+    font-size: 16px;
+    border: 1px solid black;
+  }
+.site-icon{
+    max-width: 48px;
+    height: 48px;
+}
+ .Location {
+    height:751px ;
+    border-radius: 24px;
+    background-color: #F8F8F8;
+    box-shadow: #C2C2C24F ;
+    max-width: 395px;
+    width: 100%;
+    padding: 30px;
+    display: grid;
+    justify-content: space-around; 
+}
+.location-drop-down {
+    max-width: 331px;
+    width: 100%;
+    height: 48px;
+    padding: 0 20px;
+    outline: none;
+    border-radius: 10px;
+    border: 0.5px solid #0d9ca436;
+}
+select {
+    background: url("img/drop-down-arrow.png") no-repeat;
+    background-position: calc(100% - 0.75rem) center !important;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    padding-right: 20px !important;
+}
+.check_1 span,
+.check_2 span{
+    opacity: 50%;
+}
+.check_1{
+    accent-color:#29B24E;
+    font-size: 14px;
+    display: grid;
+    gap: 10px; 
+}
+
+.property{
+    padding-top: 46px;
+}
+.price-range{
+    padding-top: 39px;
+}
+.check_2{
+         
+    gap: 20px;
+    font-size: 14px;
+    display: grid;
+    gap: 10px;
+    font-size: 14px;
+}
+.city-image{
+    max-width: 1220px;
+    width: 100%;
+    position: relative;
+}
+.section_1{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+ }
+.photo_part{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.findhouse_image{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+h1{
+    font-size: 48px;
+    font-family: poppins600; 
+}
+.search_place_photo{
+    position: absolute;
+    background: url("img/search_icon.png") no-repeat right;
+    background-size: 18px;
+    background-position-x: 294px;
+    width: 324px;
+    height: 48px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 265px;
+}
+.Namanga{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #F8F8F8;
+    border-radius: 24px;
+    position: relative;
+    max-width: 395px;
+    width: 90%;
+}
+.section_2{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.Destination{
+    font-size: 16px;
+    font-family: poppins600;
+    margin-left: 10px;
+ }
+ .Home_name{
+    font-family: poppins400;
+    font-size: 14px;
+    color: #000000;
+    opacity: 50%;
+    padding: 8px;
+ }
+ .Price_Home{
+    font-family: poppins400;
+    color:#29B24E;
+    font-size: 24px;
+ }
+ .Time{
+    font-family: poppins400;
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    align-items: flex-end;
+ }
+.month{
+    top: 10px;
+}
+.Namanga > ul{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.Top{
+    font-family: poppins400;
+    top: 4%;
+    right: 76%;
+    position: absolute;
+    font-size: 12px;
+    background-color: #29B24E;
+    color: #F8F8F8;
+    border-radius: 15px;
+    max-width:65px;
+    padding: 4px;
+}
+ 
+.Frame-icon{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    background-color: #F8F8F8;
+    padding: 5px;
+    border-radius: 48px;
+}
+ 
+.Home_all{
+    padding: 5px;
+    position: relative;
+    max-width: 363px;
+    width: 100%;
+}
+ 
+.section2_h4{
+font-size: 18px;
+padding: 36px;
+}
+footer{
+    margin-top: 100px;
+}
+
+.footer_section1{
+    background-color: #29B24E;
+    border-radius: 20px;
+  }
+ 
+footer a{
+    color: #F8F8F8;
+}
+.Namanga ul{
+    font-size: 12px;
+    font-family: poppins400;
+    display: flex;
+    justify-content: space-between;
+}
+.Namanga a{
+    color:#000000;
+}
+ 
+.footer_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+ 
+footer p{
+    display: flex;
+    color:#F8F8F8;
+    justify-content: center;
+    padding: 32px;
+}
+    
+.footer_nav{
+    display: flex;
+   align-items: baseline;
+   justify-content: space-around;
+   border-bottom: 1px white solid;
+   
+ 
+}
+ 
+.footer_line{
+    display: flex;
+    justify-content: center; 
+}
+.Line_F{
+    display: flex;
+}
+ 
+footer p{
+    display: flex;
+    color:#F8F8F8;
+    justify-content: center;
+    padding: 32px;
+}
+.search-icon{
+    display: none;
+}
+.footer_section2{
+    padding: 72px;
+    display: flex;
+    justify-content: space-around;
+    display: none;
+}
+.footer_icons{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#icon_name{
+ list-style-type: none;
+}
+.plus_icon{
+    background-color: #29B24E;
+    border-radius: 12px;
+    padding: 10px;
+}
+.footer_icons>li> h6{
+    display: flex;
+    justify-content: space-around;
+    font-family: Poppins400;
+} 
+.footerUL_1,
+.footerUL_2{
+    display: flex;
+}      
+.SupportEmail,
+.footerUL_1,
+.footerUL_2 li{
+    font-family: Poppins400;
+}
+h1>span{
+    display: flex;
+    justify-content: center
+}
+@media (max-width: 1024px) {
+    .nav_bar,
+    .header-button,
+    .search_place_photo,
+    .SupportEmail{
+        display: none;
+    }
+    .search-icon,
+    .footer_section2{
+        display: block;
+    }
+    .header_container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 30px;
+    }
+    .city-image{
+        max-width: 335px;
+        border-radius: 24px;
+        height: 435px;  
+    }
+    .section_2,
+    .section_1{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    h1{
+        max-width: 241px;
+        font-size: 24px;
+    }
+    .photo_text{
+        max-width: 294px;
+        font-size: 14px;
+    }
+    .findhouse_image{
+        display:flex;
+    }
+    .footerUL_1,
+    .footerUL_2{
+        display: grid;
+    }
+    .main_container{
+        display: grid;
+    }
+    .footer{
+        display: grid;
+    }
+ }

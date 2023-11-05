@@ -1,0 +1,431 @@
+@font-face {
+    font-family: "poppins400";
+    src: url(font/Poppins-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: "poppins500";
+    src: url(font/Poppins-Medium.ttf);
+  }
+  
+  @font-face {
+    font-family: "poppins600";
+    src: url(font/Poppins-SemiBold.ttf);
+  }
+ 
+
+*{
+    margin:0;
+     padding:0; 
+     box-sizing:border-box} 
+     
+body{
+    background-color:#F2F2F2;
+}
+a{
+    text-decoration: none;
+}
+.header_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+    flex-direction: row;
+}
+.nav_bar,
+.nav_bar li,
+.sell_something p,
+.right_side_secondUl li,
+.bottom_text p{
+    font-family:'poppins500';
+    display: flex;
+    gap:20px;
+}
+.nav_bar_a{
+    position: relative;
+    font-family:'poppins500';
+    color: black;
+}
+.nav_bar_a:after{
+    content: "";
+    position: absolute;
+    background-color: #29B24E;
+    height: 2px;
+    width: 0%;
+    left: -0%;
+    top: 30px;
+    bottom: 0;
+}
+.nav_bar_a:hover::after{
+    width: 100%;
+}
+.header-button{
+    max-width: 156px;
+    width: 100%;
+    height: 47px;
+    border-radius: 12px;
+    background-color: #29b24e;
+    border: none;
+    color: white;
+    font-family: poppins400;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+.header-button:hover{
+    font-size: 16px;
+    border: 1px solid black;
+  }
+.right_side_secondUl li{
+    display:flex;
+    flex-direction: row;
+}
+.nav_bar_a{
+    color: black;
+    gap:30px;
+}
+li{
+    list-style-type: none;
+}
+.Namanga li{
+    padding: 21px;
+    display: grid;
+    gap: 10px;
+}
+.sell_something{
+    font-family: 'poppins400';
+    color:white;
+    background-color: #29B24E;
+    border-radius: 12px;
+    padding: 13px;
+    display: flex;
+    align-items: center;
+    height: 47px;
+}
+.site-icon{
+    max-width: 48px;
+    height: 48px;
+}
+.main-photo{
+    max-width: 810px;
+    width:100%;
+}
+.section_1{
+    display: flex;
+    justify-content: center;
+}
+.right_side{
+    display: grid;
+    justify-content: center;
+    max-width:786px;
+    width: 100%;
+    background-color: #F8F8F8;
+    border-radius: 24px;
+}
+.top_text{
+    font-family:'poppins400';
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-top: 30px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.eyeFrame{
+    display: flex;
+}
+.right_side_bigtext{
+    max-width: 611px;
+    width: 90%;
+    padding-top: 32px;
+    font-family: 'poppins400';   
+}
+.Posted_time,
+.bottom_text span,
+.Paragrap_text span{
+    opacity: 70%;
+    font-size: 12px;
+    font-family: 'poppins400';
+}
+.Frame-icon{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 6%;
+    bottom: 41%;
+    background-color: #F8F8F8;
+    padding: 5px;
+    border-radius: 48px;
+}
+.Top_1{
+    font-size: 12px;
+    background-color: #29B24E;
+    color: #F8F8F8;
+    border-radius: 15px;
+    max-width:70px;
+    padding: 5px;
+}
+.Top{
+    font-family: poppins400;
+    top: 5%;
+    left: 7%;
+    position: absolute;
+    font-size: 12px;
+    background-color: rgb(41, 178, 78);
+    color: rgb(248, 248, 248);
+    border-radius: 15px;
+    max-width: 65px;
+    padding: 4px;
+}
+.Paragrap_text{
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    margin: auto;
+    font-family: 'poppins600';
+    padding-top:24px;
+    font-size: 22px;
+}
+.Kiambu{
+    padding-top: 12px;
+}
+.right_side_secondUl ul{
+    gap: 25px;
+    display: flex;
+    padding-top: 20px;
+    align-items: flex-end;
+    font-size: 14px;    
+}
+h4{
+    font-family: 'poppins600';
+    font-size: 22px;
+    margin-left: 9%;
+}
+
+.bottom_text{
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.bottomText-firstcolum,
+.bottomText-thirdcolum{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.homePrice{
+    font-family: 'poppins600';
+    color:#29B24E;
+    font-size: 36px;
+    weight:600;
+}
+.sent_message{
+    border:1px solid #29B24E;
+    max-width: 154px;
+    border-radius:12px ;
+    padding: 13px;
+    color:#29B24E;
+    font-size: 14px;
+    font-family: 'poppins400';
+}
+.Call{
+    background-color: #29B24E;
+    color: #F8F8F8;
+    padding: 13px;
+    max-width: 80px;
+    border-radius: 12px;
+    font-family: 'poppins400';
+}
+.rightSide-bottomPart{
+    padding-top: 40px;
+    display: flex;
+    justify-content:space-around;
+    margin-right: 30px;
+}
+.bottom_button{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:16px;
+    align-items: end;
+}
+.section_2{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+}
+.Namanga{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #F8F8F8;
+    border-radius: 24px;
+    position: relative;
+    max-width: 395px;
+    width: 90%;
+}
+.Home_all{
+    padding: 5px;
+    position: relative;
+    max-width: 363px;
+    width: 100%;
+}
+.Destination{
+    font-size: 16px;
+    font-family: 'poppins600';
+    margin-left: 10px;
+}
+.Home_name{
+    font-family: 'poppins400';
+    font-size: 14px;
+    color: #000000;
+    opacity: 50%;
+    padding: 8px;
+}
+.Time{
+    font-family: poppins400;
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    align-items: center
+}
+.Price_Home{
+    color:#29B24E;
+    font-size: 24px;
+}
+
+.Namanga ul{
+    display: flex;
+    font-size: 12px;
+    font-family: 'poppins400';
+    justify-content: space-between;
+}
+    
+.Namanga a{
+    color:#000000;
+}
+.main_container{
+    gap: 40px;
+    justify-content: center;
+}
+.footer_section1{
+    background-color: #29B24E;
+    border-radius: 20px;
+}
+    
+.footer_nav{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    border-bottom: 1px solid white;
+}
+.footer_section2{
+    display: none;
+}
+footer{
+    margin-top: 100px;
+}
+footer a{
+    color: #F8F8F8;
+    padding: 15px;
+    font-size: 14px;
+    font-family: 'POPPINS400';
+}
+footer ul{
+    display: flex;
+    padding: 24px;
+}
+
+.footer_line{
+    max-width: 1640px;
+    width: 100%;
+    
+}
+ 
+footer p{
+    font-family: 'poppins400';
+    display: flex;
+    color:#F8F8F8;
+    justify-content: center;
+    padding: 32px;
+}
+@media (max-width: 1024px) {
+   .header_container,
+    .mail,
+    .SupportEmail{
+    display: none;
+   }
+   .section_1,
+   .section_2{
+    display: flex;
+    flex-wrap: wrap;
+   }
+   .rightSide-bottomPart{
+    display: flex;
+    flex-direction: column;
+   }
+   .bottom_button{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    padding-bottom: 20px;
+
+   }
+   .sent_message,
+   .Call{
+    margin: auto;
+    display: flex;
+    max-width: 334px;
+    width: 100%;
+    justify-content: center;
+    
+   }
+   .bottom_text{
+    display:flex;
+    flex-direction: column;
+    margin-left: 20px;
+    
+   }
+   .top_text{
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+   }
+   footer ul{
+    flex-direction: column;
+    gap: 10px;
+   }
+   .right_side{
+    margin: auto;
+   }
+   .bottomText-secondcolum{
+    position: absolute;
+    left: 60%;
+    top: 90%;
+    }
+    h2{
+    font-size: 18px;
+
+   }
+   .right_side_bigtext,
+   .homePrice{
+    font-size: 12px;
+   }
+
+   .homePrice{
+    font-size: 24px;
+   }
+   .image-part{
+    max-width: 90%;
+    margin: auto;
+   }
+   .Paragrap_text,
+   .right_side_secondUl ul{
+    margin-left: 20px;
+   }
+   .rightSide-bottomPart span{
+     margin-left: 20px;
+
+   }
+}
